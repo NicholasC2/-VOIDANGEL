@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    background-color: #050505;
+}
+
+.fix-scroll {
+    scroll-margin-top: 150px;
+}
+
+.main-content {
+    padding: 20px;
+    color: #aaaaaa;
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.top-nav-bar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+
+    padding: 10px;
+    background-color: #111111;
+
+    font-family: "Unifraktur Maguntia";
+    font-size: 40px;
+}
+
+.top-nav-bar img {
+    width: 110px;
+    height: 110px;
+}
+
+.nav-links {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.top-nav-bar a {
+    position: relative;
+    margin: 30px;
+
+    text-decoration: none;
+    color: #dddddd;
+}
+
+.top-nav-bar a::after {
+    content: "";
+    position: absolute;
+    inset: auto 0 -2px;
+
+    height: 3px;
+    background-color: currentColor;
+    opacity: 0.5;
+
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 200ms ease;
+}
+
+.top-nav-bar a:hover::after {
+    transform: scaleX(1);
+}
+
+@font-face {
+    font-family: "Unifraktur Maguntia";
+    src: url("../fonts/UnifrakturMaguntia-Regular.ttf");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .top-nav-bar {
+        flex-direction: column;
+        justify-content: center;
+        font-size: 20px;
+    }
+
+    .top-nav-bar img {
+        margin: 0 auto;
+    }
+
+    .top-nav-bar a {
+        margin: 0 20px;
+        text-align: center;
+    }
+
+    .nav-links {
+        position: relative;
+        left: 0;
+        transform: none;
+        display: flex;
+    }
+}
