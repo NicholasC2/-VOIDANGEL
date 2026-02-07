@@ -36,6 +36,16 @@ jobs:
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 3.1
+
+      - name: Install dependencies
+        run: |
+          gem install bundler
+          bundle install || true
+          gem install jekyll
       - name: Build with Jekyll
         # Outputs to the './_site' directory by default
         run: jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
