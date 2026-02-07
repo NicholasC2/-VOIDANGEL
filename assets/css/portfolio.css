@@ -5,6 +5,15 @@
     gap: 10px;
 }
 
+.portfolio > * {
+    opacity: 80%;
+    transition: opacity 200ms;
+}
+
+.portfolio > *:hover {
+    opacity: 100%;
+}
+
 .portfolio a {
     display: flex;
     flex-direction: column;
