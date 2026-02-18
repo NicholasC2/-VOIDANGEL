@@ -7,7 +7,7 @@
 }
 
 .item {
-    opacity: 80%;
+    opacity: 100%;
     transition: opacity 200ms;
 
     position: relative;
@@ -18,7 +18,7 @@
 }
 
 .item:hover {
-    opacity: 100%;
+    opacity: 70%;
 }
 
 .portfolio a {
@@ -42,4 +42,16 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+@media (max-width: 768px) {
+    .portfolio {
+        column-count: 3;
+    }
+}
+
+@media (max-width: 500px) {
+    .portfolio {
+        column-count: 2;
+    }
 }
