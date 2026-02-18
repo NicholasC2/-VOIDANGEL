@@ -2,9 +2,6 @@
     column-count: 5;
     column-gap: 10px;
 }
-.main-content {
-    display: block;
-}
 
 .item {
     opacity: 100%;
@@ -29,19 +26,19 @@
     color: #dddddd;
 }
 
-.portfolio img {
-    object-fit: cover;
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
 .portfolio span {
     margin-top: 5px;
     text-align: center;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+.portfolio img,
+.portfolio video {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 @media (max-width: 768px) {
