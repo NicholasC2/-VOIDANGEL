@@ -1,25 +1,87 @@
----
-title: Home
-permalink: /
----
-
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>§_VØ1Đ/A₦GɆL_§ -«~ home</title>
-		<link rel="stylesheet" href="/assets/css/main.css">
-	</head>
-	<body>
-		{% include header.html %}
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>void angel</title>
+<style>
+body {
+    margin: 0;
+    background: black;
+    display: flex;
+    justify-content: center;
+}
+.wrapper {
+    width: 90vw;
+    max-width: 500px;
+    font-family: monospace;
+    white-space: pre;
+    color: lime;
+    font-size: clamp(2px, 2vw, 16px);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.terminal {
+    padding: 5px;
+    flex: 1;
+}
+.copyright {
+    margin-top: auto;
+    margin-bottom: 10px;
+}
+.photos {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.photos img {
+    flex: 1;
+    max-width: 40%;
+    height: auto;
+}
+.list a {
+    text-decoration: none;
+    color: white;
+    background: black;
+}
+.list a:hover {
+    color: black;
+    background: white;
+}
+.list {
+    margin: 0;
+}
+</style>
+</head>
+<body>
+<div class="wrapper">
+    <div class="terminal">
+    _    _   _  ____ _____ _      __     _____ ___ ____  
+   / \  | \ | |/ ___| ____| |     \ \   / / _ \_ _|  _ \ 
+  / _ \ |  \| | |  _|  _| | |      \ \ / / | | | || | | |
+ / ___ \| |\  | |_| | |___| |___    \ V /| |_| | || |_| |
+/_/   \_\_| \_|\____|_____|_____|    \_/  \___/___|____/ 
+------nicholasc--------------------------------------------
 
-		<main class="main-content">
-			<div id="home" class="fix-scroll">
-				<p>#ANGEL DEV</p>
-			</div>
-		</main>
-		
-		{% include footer.html %}
-	</body>
+---my projects---
+<div class="list"><a href="https://github.com/NicholasC2/WebKonsole">WebKonsole</a>
+<a href="https://github.com/NicholasC2/Bean-Engine">Bean Engine</a>
+<a href="https://github.com/NicholasC2/Netherite-Client">Netherite Client</a>
+<a href="https://github.com/NicholasC2/TchaT">TchaT</a>
+</div>
+---cool photos i took---
+<div class="photos"><img src="./IMG_0238.JPG">
+<img src="./IMG_0244.JPG">
+<img src="./IMG_0258.JPG">
+<img src="./IMG_0268.JPG">
+</div>
+    </div>
+    
+<div class="copyright">
+---©nicholasc-2026-----------------------------------------
+</div>
+
+</div>
+</body>
 </html>
